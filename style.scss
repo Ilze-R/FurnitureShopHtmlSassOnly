@@ -1,0 +1,364 @@
+$font: "Raleway", sans-serif;
+$dark-green: #464e2e;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: $font;
+  background-color: #e9e5d6;
+  width: 100rem;
+  .green-bckgr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58.8rem;
+    height: 56.25rem;
+    background-color: #acb992;
+    z-index: -2;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.375rem;
+    img {
+      margin-left: 12.31rem;
+      cursor: pointer;
+    }
+    ul {
+      display: flex;
+      gap: 2.313rem;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+        cursor: pointer;
+      }
+    }
+    button {
+      font-family: $font;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      font-size: 14px;
+      line-height: 16px;
+      background-color: $dark-green;
+      color: white;
+      border: none;
+      width: 9.375rem;
+      height: 2.5rem;
+      margin-right: 12.5rem;
+      cursor: pointer;
+      font-style: normal;
+    }
+  }
+
+  .even-columns {
+    display: flex;
+    height: 51.416rem;
+    .catalogue {
+      position: relative;
+      flex-basis: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      .h1 {
+        width: 759.56px;
+        height: 41.84px;
+        margin-top: 19.375rem;
+        margin-left: 12.5rem;
+      }
+      button {
+        font-family: $font;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        font-size: 16px;
+        line-height: 19px;
+        font-style: normal;
+        background-color: $dark-green;
+        color: white;
+        border: none;
+        width: 14.375rem;
+        height: 3.125rem;
+        margin-left: 12.625rem;
+        cursor: pointer;
+      }
+    }
+    .home-img {
+      img {
+        position: absolute;
+        width: 317px;
+        height: 475px;
+        margin-top: 13.875rem;
+        transform: translateX(-63%);
+        margin-right: 30.313rem;
+        z-index: -1;
+        background-color: #fff;
+        padding: 2.813rem 1.063rem 2.75rem 1.125rem;
+      }
+    }
+  }
+  .middle-wrapper {
+    h1 {
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.1em;
+      color: $dark-green;
+      margin: 3.563rem 0;
+    }
+    .gallery-img {
+      margin-left: 11.438rem;
+      margin-right: 13.625rem;
+      display: grid;
+      grid-row-gap: 2.063rem;
+      grid-column-gap: 1.625rem;
+      grid-template-areas:
+        "img1 img2 img3"
+        "img4 img5 img3"
+        "img4 img5 img6";
+    }
+  }
+  .below-wrapper {
+    margin-top: 3.563rem;
+    height: 29.563rem;
+    background-color: #acb992;
+    h1 {
+      padding-top: 3.563rem;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.1em;
+      color: $dark-green;
+      text-align: center;
+    }
+    img {
+      margin-top: 8.221rem;
+      margin-left: 12.258rem;
+      margin-bottom: 1.207rem;
+    }
+    p {
+      margin-left: 12.5rem;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #fff;
+    }
+    button {
+      font-family: $font;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      font-size: 14px;
+      line-height: 16px;
+      background-color: transparent;
+      border: 1px solid $dark-green;
+      width: 13.313rem;
+      height: 2.813rem;
+      margin-left: 12.5rem;
+      margin-top: 1.75rem;
+      cursor: pointer;
+      font-style: normal;
+    }
+  }
+  .footer-wrapper {
+    height: 25.125rem;
+    img {
+      padding-top: 3.136rem;
+      margin-bottom: 3.166rem;
+      margin-left: 45.804rem;
+    }
+    .footer-text-wrapper {
+      margin-left: 18.563rem;
+      margin-right: 17.563rem;
+      display: flex;
+      justify-content: space-between;
+      .left-part {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .middle-part {
+        display: flex;
+        flex-direction: column;
+        gap: 1.938rem;
+      }
+      .right-part {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        color: black;
+        a {
+          color: black;
+        }
+      }
+    }
+    .footer-last-text {
+      margin-left: 41.688rem;
+      margin-top: 5.125rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.375rem;
+      justify-content: center;
+    }
+  }
+}
+
+.footer-wrapper p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/***************/
+/* grid images */
+/***************/
+
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img4 {
+  grid-area: img4;
+}
+.img5 {
+  grid-area: img5;
+}
+.img6 {
+  grid-area: img6;
+}
+
+/******************/
+/* vertical lines */
+/******************/
+.line {
+  border-right: 1px solid #ffffff;
+  position: absolute;
+  top: 0;
+  height: 56.25rem;
+}
+.one {
+  width: 13.938rem;
+}
+.two {
+  width: 25.813rem;
+  z-index: 2;
+}
+.three {
+  width: 52.8rem;
+}
+.four {
+  width: 85.125rem;
+  border-right: 1px solid $dark-green;
+}
+
+.five {
+  top: 56.25rem;
+  width: 16.75rem;
+  height: 65.188rem;
+  border-right: 1px solid $dark-green;
+  z-index: -1;
+}
+.six {
+  width: 93.688rem;
+  height: 65.188rem;
+  border-right: 1px solid $dark-green;
+  top: 56.25rem;
+  z-index: -1;
+}
+.seven {
+  top: 121.438rem;
+  width: 10.25rem;
+  height: 29.563rem;
+}
+
+.eight {
+  top: 151rem;
+  width: 31.125rem;
+  height: 25.125rem;
+  border-right: 1px solid $dark-green;
+}
+
+.bend-line-1 {
+  width: 1000px;
+  height: 56.25rem;
+  left: 600px;
+  transform: rotate(360deg);
+  position: absolute;
+  top: 0;
+}
+
+.bend-line-2 {
+  top: 113.25rem;
+  position: absolute;
+  left: 200px;
+}
+
+/***********/
+/* circles */
+/***********/
+
+.svg {
+  position: absolute;
+}
+
+.top {
+  top: 43.188rem;
+  left: 43.75rem;
+  z-index: -1;
+}
+
+.middle {
+  top: 75.125rem;
+  left: 6.75rem;
+  z-index: -1;
+}
+
+.below {
+  width: 5.783rem;
+  height: 5.838rem;
+  top: 111.015rem;
+  left: -3rem;
+}
+
+.footercircle {
+  right: -7.2rem;
+  top: 144.95rem;
+  z-index: -1;
+}
